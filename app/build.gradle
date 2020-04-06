@@ -15,8 +15,20 @@ android {
 
         externalNativeBuild {
             cmake {
-                cppFlags ""
+                cppFlags "-std=c++11 -frtti -fexceptions"
             }
+            ndk {
+                abiFilters "armeabi-v7a"
+            }
+        }
+
+
+    }
+
+    sourceSets {
+        main {
+            // let gradle pack the shared library into apk
+            jniLibs.srcDirs = ['src/main/cpp']
         }
     }
 
