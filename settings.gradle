@@ -1,0 +1,2 @@
+rootProject.name='Neptune-Player'
+include ':app'
