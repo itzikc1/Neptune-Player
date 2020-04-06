@@ -103,7 +103,7 @@ static int start_streaming(void* m_VidHadle,PROTOCOL protocol,char *ip,int port)
 
 extern "C"
 JNIEXPORT void JNICALL
-Java_com_example_player1_Player_playVideo(JNIEnv *env, jobject thiz, jobject surface) {
+Java_com_inc_neptune_1player_Player_playVideo(JNIEnv *env, jobject thiz, jobject surface) {
     int result;
      int version=0;
      void *m_VidDisp1=0;
